@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n= +prompt('nhâp số vào ô');
+    if (n==2){alert(n + 'la so nguyen to')
+    } else {let check = true
+        for (let i = 2; i < n; i++) {
+            if (n%i==0){ check = false;}
+        } if ( check == true) {
+            alert(n + "la so nguyen to")
+            } else {alert(n + "khong la so nguyen to")}
+    }
+</script>
+
+</body>
+</html>

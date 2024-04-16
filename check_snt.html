@@ -7,14 +7,19 @@
 <body>
 <script>
     let count=0;
-    let start= 2;
+    let start= 3;
     let number= +prompt("moi nhap vao so luong so nguyen to can thiet")
-    while (count<number) {
-        let check = true;
-        for (let i = 2; i < start; i++) {
-            if (start % i==0){check=false} if (check == true){
-            document.write(start + "<br>");count++; break;}
-        } start++;
+    while (count<number){
+        let check=true
+            for (let i = 2; i < start; i++) {
+                if (start%i==0){ check = false;
+                break;}
+            }
+        if (check==true){
+            document.write(start+"la so nguyen to" + "<br>");
+            count++;
+        }
+        start++;
     }
     // function checkPrime(n) {
     // // tra ve true neu la so nguyen to
